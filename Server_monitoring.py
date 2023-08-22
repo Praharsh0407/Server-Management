@@ -88,7 +88,7 @@ while True:
                 print("Updating SystemStatus_lf at:", datetime.now())
                 print("----------------------------------------")
 
-            # time.sleep(1)  # Wait for 1 second before the next iteration
+            time.sleep(1)  # Wait for 1 second before the next iteration
         cur_time = datetime.now()
 
 cur.close()
