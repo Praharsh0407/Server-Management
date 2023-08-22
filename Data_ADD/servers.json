@@ -1,8 +1,8 @@
 [
     {
         "name": "Server 1",
-        "ip_address": "192.168.1.100",
-        "mac_address": "00:11:22:33:44:55"
+        "ip_address": "192.168.2.100",
+        "mac_address": "11:22:33:44:55:66"
     },
     {
         "name": "Server 2",
@@ -13,5 +13,10 @@
         "name": "Server 3",
         "ip_address": "192.111.111.111",
         "mac_address": "32:32:21"
+    },
+    {
+        "name": "Server 4",
+        "ip_address": "192.111.2.211",
+        "mac_address": "aa:bb:nn:cc:dd:ee"
     }
 ]
