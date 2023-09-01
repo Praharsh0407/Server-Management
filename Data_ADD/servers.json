@@ -1,22 +1,12 @@
 [
     {
         "name": "Server 1",
-        "ip_address": "192.168.2.100",
-        "mac_address": "11:22:33:44:55:66"
+        "ip_address": "192.168.1.1",
+        "mac_address": "aa:bb:cc:dd"
     },
     {
         "name": "Server 2",
-        "ip_address": "192.168.1.101",
-        "mac_address": "AA:BB:CC:DD:EE:FF"
-    },
-    {
-        "name": "Server 3",
-        "ip_address": "192.111.111.111",
-        "mac_address": "32:32:21"
-    },
-    {
-        "name": "Server 4",
-        "ip_address": "192.111.2.211",
-        "mac_address": "aa:bb:nn:cc:dd:ee"
+        "ip_address": "192.168.1.2",
+        "mac_address": "ab:cd:ef:gh"
     }
 ]

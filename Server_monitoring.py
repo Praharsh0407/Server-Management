@@ -28,8 +28,7 @@ cur.execute("CREATE TABLE SystemStatus_lf (Server_Name VARCHAR(50), IP_Address V
 with open('Data_ADD/servers.json') as f:
     servers = json.load(f)
 
-while True:
-    for server in servers:
+for server in servers:
         ip_address = server["ip_address"]
         mac_address = server["mac_address"]
         os_version = f"{platform.system()} {platform.release()} {platform.version()}"
@@ -45,6 +44,9 @@ while True:
 
         mydb.commit()
 
+while True:
+    with open('Data_ADD/servers.json') as f:
+        servers = json.load(f)
     for server in servers:
         cur_time = datetime.now()
         while (datetime.now() - cur_time).total_seconds() < update_interval_hf_seconds:
