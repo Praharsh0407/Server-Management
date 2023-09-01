@@ -77,8 +77,8 @@ while True:
                 mydb.commit()
 
                 next_update_time_hf += timedelta(seconds=update_interval_hf_seconds)
-                print("Updating SystemStatus_hf at:", datetime.now())
-                print("----------------------------------------")
+                # print("Updating SystemStatus_hf at:", datetime.now())
+                # print("----------------------------------------")
 
             if datetime.now() >= next_update_time_lf:
                 cur.execute("INSERT INTO SystemStatus_lf (Server_Name, IP_Address, MAC, OS_Version, System_RAM, number_of_cores, Storage_Capacity, Timestamp) VALUES (%s, %s, %s, %s, %s, %s, %s, %s)",
@@ -87,8 +87,8 @@ while True:
                 mydb.commit()
 
                 next_update_time_lf += timedelta(seconds=update_interval_lf_seconds)
-                print("Updating SystemStatus_lf at:", datetime.now())
-                print("----------------------------------------")
+                # print("Updating SystemStatus_lf at:", datetime.now())
+                # print("----------------------------------------")
 
             time.sleep(1)  # Wait for 1 second before the next iteration
         cur_time = datetime.now()

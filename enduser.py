@@ -6,6 +6,9 @@ def save_server_data(server_data):
     with open('Data_ADD\\servers.json', 'w') as file:
         json.dump(server_data, file, indent=4)
 
+# Start server monitoring in the background on Windows
+os.system("start /B python server_monitoring.py")
+
 # Load existing data from the JSON file
 with open('Data_ADD\\servers.json', 'r') as file:
     server_data = json.load(file)
